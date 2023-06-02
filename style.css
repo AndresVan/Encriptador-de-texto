@@ -1,4 +1,16 @@
 body{
     background: #d5e6ef;
+    
+}
 
+/*header*/
+.caja{
+    background: #888;
+    width: 100px;
+
+}
+.logo{
+    width: 31.09px; 
+    float: left;
+    margin: 0 20px 20px 0;
 }
