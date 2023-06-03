@@ -165,3 +165,16 @@ main{
     transform: scale(1.1);
     background: rgba(168, 203, 231, 0.8);
 }
+
+footer{
+    background:linear-gradient(#022865d7, #033b5f);
+    text-align: center;
+    padding: 10px;
+}
+
+footer p{
+    margin: 10px;
+    font-size: 13px;
+    color: #d5e6ef;
+    line-height: 15px;
+}
