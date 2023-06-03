@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
     <header>
         <div class="caja">
-            <img src="img/Vector.png" alt="Logo alura" class="logo">
-            <h1>Encriptador</h1>
+            <img src="img/logoalura.png" alt="Logo alura" class="logo">
         </div>
     </header>
-<main>
-    <section>
-        <textarea cols="30" rows="10" class="text-area" placeholder="Ingrese el texto aquí"></textarea>
-        <div>
-            <h6 class="nota">Ingrese sólo texto en minúsculas y sin acento</h6>
-        </div>
-        <div class="botones">
-            <button class="btn-encriptar">Encriptar</button>
-            <button class="btn-desencriptar">Desencriptar</button>
-        </div>
-    </section>
+    <main>
+        <section>
+            <textarea cols="30" rows="10" class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="nota"> <img src="img/exclamacion.png" alt="exc"> Ingrese sólo texto en minúsculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
 
-    <section>
-        <textarea cols="20" rows="10" class="mensaje"></textarea>
-        <div class="copy">
-            <button class="btn-copiar">Copiar</button>
-        </div>
-    </section>
-</main>
+        <section >
+            
+            <textarea cols="20" rows="10" class="mensaje"></textarea>
+            <div class="ningun-mensaje">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <h2>Ingresa el texto que deseas encriptar o desencriptar.</h2>
+            </div>
+            <div class="copy">
+                <button class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
 
 </body>
 </html>
