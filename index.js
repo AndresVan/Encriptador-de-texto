@@ -12,7 +12,6 @@ function btnEncriptar(){
     const textoEncriptado = encriptar(texto.value);
     mensaje.value = textoEncriptado;
     texto.value = "";                             //Limpia el text-area
-    mensaje.style.backgroundImage = "none";
     limpiarPantallaMsn("none");
 }
 
@@ -21,7 +20,6 @@ function btnDesencriptar(){
     const textoDesencriptado = desencriptar(texto.value);
     mensaje.value = textoDesencriptado;
     texto.value = "";
-    mensaje.style.backgroundImage = "none";
     limpiarPantallaMsn("none");
     
 }
@@ -55,6 +53,7 @@ function desencriptar(stringDesencriptado){
 //Función Limpiar Pantalla Mensaje//
 
 function limpiarPantallaMsn(atributo){
-    document.querySelector(".ningun-mensaje").style.display = atributo;
+    document.querySelector(".ningun-mensaje").style.display = atributo; //Texto Oculto
+    mensaje.style.backgroundImage = "none";                             //Imagen oculta
     
 }
