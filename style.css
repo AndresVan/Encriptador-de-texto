@@ -63,6 +63,7 @@ main{
     position:relative;
     margin-top: 70%;
     margin-left: 400px;
+    display: block;
 }
 
 .ningun-mensaje h1{

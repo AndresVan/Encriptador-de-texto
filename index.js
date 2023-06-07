@@ -11,14 +11,19 @@ La letra "u" es convertida para "ufat"*/
 function btnEncriptar(){
     const textoEncriptado = encriptar(texto.value);
     mensaje.value = textoEncriptado;
-    texto.value = "";                               //Limpia el text-area
+    texto.value = "";                             //Limpia el text-area
+    mensaje.style.backgroundImage = "none";
+    limpiarPantallaMsn("none");
 }
 
 //botón Desencriptar//
 function btnDesencriptar(){
-    const textoDesencriptado = desencriptar(mensaje.value);
+    const textoDesencriptado = desencriptar(texto.value);
     mensaje.value = textoDesencriptado;
-
+    texto.value = "";
+    mensaje.style.backgroundImage = "none";
+    limpiarPantallaMsn("none");
+    
 }
 
 //Función Encriptar//
@@ -45,4 +50,11 @@ function desencriptar(stringDesencriptado){
         }
     }
     return stringDesencriptado;
+}
+
+//Función Limpiar Pantalla Mensaje//
+
+function limpiarPantallaMsn(atributo){
+    document.querySelector(".ningun-mensaje").style.display = atributo;
+    
 }
