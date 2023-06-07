@@ -10,8 +10,7 @@ La letra "u" es convertida para "ufat"*/
 //botón Encriptar//
 function btnEncriptar(){
     const textoEncriptado = encriptar(texto.value);
-    mensaje.value = textoEncriptado;
-    texto.value = "";                             //Limpia el text-area
+    mensaje.value = textoEncriptado;                            
     limpiarPantallaMsn("none");
 }
 
@@ -19,9 +18,7 @@ function btnEncriptar(){
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(texto.value);
     mensaje.value = textoDesencriptado;
-    texto.value = "";
     limpiarPantallaMsn("none");
-    
 }
 
 //Función Encriptar//
@@ -50,10 +47,19 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado;
 }
 
+//Función copiar//
+function btncopiar(){ 
+        let copyText = mensaje;
+        copyText.select();             //Llama el método seleccionar
+        document.execCommand("copy"); // utiliza el método copy
+}
+
 //Función Limpiar Pantalla Mensaje//
 
 function limpiarPantallaMsn(atributo){
+    texto.value = "";                                                   //Limpia el text-area
     document.querySelector(".ningun-mensaje").style.display = atributo; //Texto Oculto
     mensaje.style.backgroundImage = "none";                             //Imagen oculta
     
 }
+
