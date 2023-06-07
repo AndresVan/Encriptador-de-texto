@@ -9,9 +9,9 @@ body{
 
 /*header*/
 
-.logo{
-    padding-top: 10px; /*Deja un espacio arriba*/
-    margin-left: 10px;  /*Crea un margen respecto a la izquierda*/
+.caja{
+    padding-top: 20px; /*Deja un espacio arriba*/
+    margin-left: 50px;  /*Crea un margen respecto a la izquierda*/
     width: 1%;  /*Dimensiona el tamaño del logo.*/
 }
 
@@ -141,7 +141,7 @@ main{
 
 .copy{
     background: #dce2e5;
-    margin-top: 68px;
+    margin-top: 38px;
     margin-left: 400px;
 
 }
