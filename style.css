@@ -12,7 +12,10 @@ body{
 .caja{
     padding-top: 20px; /*Deja un espacio arriba*/
     margin-left: 50px;  /*Crea un margen respecto a la izquierda*/
-    width: 1%;  /*Dimensiona el tamaño del logo.*/
+    width: 30%;  /*Dimensiona el tamaño del logo.*/
+    font-weight: bold;
+    font-family: 'Inter';
+    color: #031b57;
 }
 
 main{
@@ -180,4 +183,14 @@ footer p{
     font-size: 13px;
     color: #d5e6ef;
     line-height: 15px;
+}
+
+footer img{
+    width: 2%;
+    line-height: 1px;
+    border-radius: 5px;
+}
+
+footer img:hover{
+    transform: scale(1.1);
 }
