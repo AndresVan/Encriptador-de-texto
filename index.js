@@ -1,5 +1,6 @@
 const texto = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
+const btncopy = document.querySelector (".btn-copiar");
 
 /* La letra "e" es convertida para "enter"
 La letra "i" es convertida para "imes"
@@ -10,15 +11,15 @@ La letra "u" es convertida para "ufat"*/
 //botón Encriptar//
 function btnEncriptar(){
     const textoEncriptado = encriptar(texto.value);
-    mensaje.value = textoEncriptado;                            
-    limpiarPantallaMsn("none");
+    mensaje.value = textoEncriptado; 
+    limpiarPantallaMsn("img1");
 }
 
 //botón Desencriptar//
 function btnDesencriptar(){
     const textoDesencriptado = desencriptar(texto.value);
     mensaje.value = textoDesencriptado;
-    limpiarPantallaMsn("none");
+    limpiarPantallaMsn("img2");
 }
 
 //Función Encriptar//
@@ -57,9 +58,18 @@ function btncopiar(){
 //Función Limpiar Pantalla Mensaje//
 
 function limpiarPantallaMsn(atributo){
-    texto.value = "";                                                   //Limpia el text-area
-    document.querySelector(".ningun-mensaje").style.display = atributo; //Texto Oculto
-    mensaje.style.backgroundImage = "none";                             //Imagen oculta
-    
+    texto.value = "";                                                  //Limpia el text-area
+    //document.querySelector(".ningun-mensaje").style.display = "none"; //Texto desaparece
+
+    document.querySelector(".ningun-mensaje").style.visibility = 'hidden'; //Texto Oculto
+
+    if(atributo=="img1"){
+        mensaje.style.backgroundImage = 'url(img/whatis_encryption.png)';     //Imagen oculta con 'none' o con url nueva imagen
+    }else{
+        mensaje.style.backgroundImage = 'url(img/descifrado.png)';          //Imagen oculta con 'none' o con url nueva imagen
+    }
+    mensaje.style.backgroundSize = '100%';                             //Modifica el tamano de la imagen
+    mensaje.style.opacity = "0.5";
+    btncopy.style.visibility = 'visible';
 }
 

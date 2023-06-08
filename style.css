@@ -29,7 +29,7 @@ main{
     font-style: italic;
     font-size: 32px;
     width: 577px;
-    height: 500px;
+    height: 470px;
     text-transform: lowercase; /* transforma el texto a minúscula*/
 }
 
@@ -53,9 +53,11 @@ main{
     top: 40px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.8);
     background-image: url("img/Muñeco.png");
+    opacity: 1;
     background-repeat: no-repeat;
     background-position: 25%;
-    
+    text-align: center;
+    font-size: 40px;
 }
 
 .ningun-mensaje{
@@ -64,6 +66,7 @@ main{
     margin-top: 70%;
     margin-left: 400px;
     display: block;
+    visibility: visible;
 }
 
 .ningun-mensaje h1{
@@ -141,10 +144,8 @@ main{
 }
 
 .copy{
-    background: #dce2e5;
     margin-top: 38px;
     margin-left: 400px;
-
 }
 
 .btn-copiar{
@@ -159,6 +160,7 @@ main{
     border: 1px solid;
     cursor: pointer;
     left: 1000px;
+    visibility: hidden;
     
 }
 
